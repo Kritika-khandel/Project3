@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotionCut 3</title>
+    <style>
+        
+        body, h1, h2, p, ul, li, img {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            display: flex;
+            gap: 20px;
+        }
+
+        .product-image {
+            max-width: 350px;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+
+        .product-name {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #e67e22;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #d35400;
+        }
+
+        .customer-reviews, .related-products {
+            margin-top: 40px;
+        }
+
+        .review {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .review p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .review .rating {
+            color: #e67e22;
+        }
+
+        .related-products-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <img src="top1.jpeg" alt="top 1 Image" class="product-image">
+            <div class="product-info">
+                <h1 class="product-name">StyleCast Girls V-Neck Top</h1>
+                <p class="product-description">
+				<h2>Product Details</h2>
+            <ul>
+				<li><strong>Fabric Name:</strong> Viscose Rayon</li>
+			    <li><strong>Product Type:</strong> Regular Top</li>
+                <li><strong>Color:</strong> Grey</li>
+        <li><strong>Design:</strong> Solid</li>
+        <li><strong>Neckline:</strong> V-Neck</li>
+        <li><strong>Sleeves:</strong> Long, Regular Sleeves</li>
+        <li><strong>Fabric:</strong> Woven</li>
+    </ul>
+				<br> <B>Material & Care:</b><br>Viscose Rayon<br>Machine Wash</p>
+				<br> Best Price ₹300 with coupon SHOPME<br>
+				Easy 3 days returns & exchanges (Choose to return or exchange for a different size)
+                <p class="product-price"><br>₹399.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+
+            <div class="review">
+                <h3>Prastuti Bharadwaj</h3>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p>"This product is amazing! It exceeded my expectations and the quality is top-notch."</p>
+            </div>
+
+            <div class="review">
+                <h3>Anmol Sharma</h3>
+                <p class="rating">Rating: ★★★☆☆</p>
+                <p>"The product is good, but it took longer than expected to arrive. Overall, I'm satisfied."</p>
+            </div>
+
+            <div class="review">
+                <h3>Gorii Shankar</h3>
+                <p class="rating">Rating: ★★★★★</p>
+                <p>"Absolutely love it! Great value for the price. Will definitely recommend to others."</p>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="related-products-grid">
+                
+                <div class="product-card">
+                    <img src="top3.jpeg" alt="top 3 Image">
+                    <h3>Women Floral Print Regular Fit Top</h3>
+                    <p>₹399</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+               
+                <div class="product-card">
+                    <img src="top4.jpeg" alt="top 4 Image">
+                    <h3>Women Embroidered Regular Fit Top</h3>
+                    <p>₹449.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="top5.jpeg" alt="top 5 Image">
+                    <h3>Red Embroidered Regular Top</h3>
+                    <p>₹349.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 kritika's Fashion Webpage</p>
+    </footer>
+</body>
+</html>
